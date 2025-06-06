@@ -1,4 +1,4 @@
-import { FaCode, FaCog, FaUsers, FaArrowRight } from "react-icons/fa";
+import { FaCode, FaCog, FaUsers } from "react-icons/fa";
 import Link from "next/link";
 
 const Page = () => {
