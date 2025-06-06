@@ -25,9 +25,7 @@ const Page = () => {
               . These Terms of Service (&ldquo;Terms&rdquo;) govern your access
               to and use of the Getaways Management mobile application (the
               &ldquo;App&rdquo;), operated by{" "}
-              <span className="font-semibold text-white">
-                [Your Company Name]
-              </span>{" "}
+              <span className="font-semibold text-white">APPIFY P.C.</span>{" "}
               (&ldquo;we&rdquo;, &ldquo;our&rdquo;, &ldquo;us&rdquo;).
             </p>
             <div className="bg-blue-900 border-l-4 border-blue-500 p-4">
