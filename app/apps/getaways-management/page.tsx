@@ -1,5 +1,5 @@
-const Home = () => {
+const Page = () => {
   return <div>THIS PAGE IS UNDER CONSTRUCTION</div>;
 };
 
-export default Home;
+export default Page;
