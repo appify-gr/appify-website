@@ -78,14 +78,14 @@ export default function RootLayout({
             <div className="flex justify-center space-x-6 mb-4">
               <Link
                 prefetch={true}
-                href="/apps/getaways-management/privacy-policy"
+                href="https://app-ify.com/apps/getaways-management/privacy-policy"
                 className="text-gray-400 hover:text-gray-300 text-sm"
               >
                 Privacy Policy
               </Link>
 
               <Link
-                href="/apps/getaways-management/terms-of-service"
+                href="https://app-ify.com/apps/getaways-management/terms-of-service"
                 prefetch={true}
                 className="text-gray-400 hover:text-gray-300 text-sm"
               >
