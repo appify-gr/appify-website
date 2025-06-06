@@ -221,7 +221,7 @@ const Page = () => {
               <p className="text-gray-300">
                 To exercise your rights, contact us at:{" "}
                 <span className="font-semibold text-blue-400">
-                  [Insert contact email]
+                  info@app-ify.com
                 </span>
               </p>
             </div>

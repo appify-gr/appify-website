@@ -232,11 +232,11 @@ const Page = () => {
               <p className="text-gray-300 leading-relaxed">
                 These Terms are governed by the laws of{" "}
                 <span className="font-semibold text-white">
-                  [Insert Country or Region, e.g., Greece or the European Union]
+                  Greece and the European Union
                 </span>
                 , without regard to conflict of law principles. Any disputes
                 will be resolved in the competent courts of{" "}
-                <span className="font-semibold text-white">[Insert City]</span>.
+                <span className="font-semibold text-white">Greece</span>.
               </p>
             </div>
           </section>
