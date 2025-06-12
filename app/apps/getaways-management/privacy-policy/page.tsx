@@ -9,7 +9,7 @@ const Page = () => {
           </h1>
           <p className="text-gray-300 text-lg">For Getaways Management</p>
           <p className="text-gray-400 text-sm mt-2">
-            Last updated: June 6, 2025
+            Last updated: June 12, 2025
           </p>
         </div>
 
@@ -94,6 +94,37 @@ const Page = () => {
                   (e.g., mapping or tour tracking), we may collect location data
                   even when the app is in the background or closed.
                 </p>
+              </div>
+
+              <div className="bg-gray-700 rounded-lg p-6 border border-gray-600">
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  d. Uploaded Photos
+                </h3>
+                <div className="space-y-4">
+                  <p className="text-gray-300">
+                    Photos uploaded through the App become the property of the
+                    application and are stored solely for the purpose of
+                    application operations.
+                  </p>
+                  <div className="bg-green-900 border-l-4 border-green-500 p-4">
+                    <p className="text-gray-300">
+                      <span className="font-semibold text-green-400">
+                        Important:
+                      </span>{" "}
+                      Uploaded photos are not given, sold, or used by anyone
+                      outside of the application's intended functionality.
+                    </p>
+                  </div>
+                  <div className="bg-blue-900 border-l-4 border-blue-500 p-4">
+                    <p className="text-gray-300">
+                      If you upload a picture by mistake, you can contact us at{" "}
+                      <span className="font-semibold text-blue-400">
+                        info@app-ify.com
+                      </span>{" "}
+                      to request removal.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
