@@ -112,7 +112,7 @@ const Page = () => {
                         Important:
                       </span>{" "}
                       Uploaded photos are not given, sold, or used by anyone
-                      outside of the application's intended functionality.
+                      outside of the application&apos;s intended functionality.
                     </p>
                   </div>
                   <div className="bg-blue-900 border-l-4 border-blue-500 p-4">
@@ -283,7 +283,7 @@ const Page = () => {
               </span>
               Third-Party Services
             </h2>
-            <div className="bg-yellow-900 border-l-4 border-yellow-500 p-6 border border-yellow-700">
+            <div className="bg-yellow-900 border-l-4 border-yellow-500 p-6 border">
               <p className="text-gray-300 leading-relaxed">
                 The App may integrate with third-party services (e.g., Firebase,
                 Google Maps). These services may collect data under their own
