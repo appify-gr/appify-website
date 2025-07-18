@@ -1,6 +1,8 @@
 import { FaCode, FaCog, FaUsers } from "react-icons/fa";
 import Link from "next/link";
 
+//------------------------------------------------------------------------
+
 const Page = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-slate-900">
