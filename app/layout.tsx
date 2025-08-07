@@ -27,8 +27,9 @@ export default function RootLayout({
       <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       <body className={roboto.className}>
         {/* Navigation */}
-        <nav className="sticky top-0 z-50 bg-gray-800/80 backdrop-blur-md border-b border-gray-700/50">
-          <div className="container mx-auto px-4 py-4">
+
+        <nav className="sticky top-0 z-50 backdrop-blur-md animated-bottom-border">
+          <div className="container mx-auto px-4 py-7">
             <div className="flex justify-between items-center">
               <Link href="/" className="flex items-center">
                 <Image

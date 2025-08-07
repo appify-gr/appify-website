@@ -21,13 +21,72 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #1c293b;
     --foreground: #ededed;
   }
 }
 
 body {
-  background: var(--background);
+  background: #101727;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.animated-divider {
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-divider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -30%;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(251, 191, 36, 0.3) 50%,
+    transparent 100%
+  );
+  animation: lightSweep 4s linear infinite;
+}
+
+@keyframes lightSweep {
+  0% {
+    left: -30%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.animated-bottom-border {
+  overflow: hidden;
+}
+
+.animated-bottom-border::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -30%;
+  width: 40%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(251 190 36 / 0.47) 40%,
+    transparent 100%
+  );
+  animation: lightSweep 4s linear infinite;
+}
+
+@keyframes lightSweep {
+  0% {
+    left: -30%;
+  }
+  100% {
+    left: 100%;
+  }
 }

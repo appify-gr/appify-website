@@ -1,6 +1,5 @@
 import { FaCode, FaCog, FaUsers } from "react-icons/fa";
 import Link from "next/link";
-import Image from "next/image";
 
 //------------------------------------------------------------------------
 
@@ -11,13 +10,15 @@ const Page = () => {
       <div className="min-h-screen flex flex-col relative overflow-hidden">
         {/* Background Logo Behind Heading */}
         <div className="hidden sm:flex absolute inset-0 pointer-events-none items-center justify-center opacity-3 px-10">
-          <Image
-            src="/APPIFY_LOGO_HORIZONTAL_ONLY_TEXT_WHITE.png"
-            alt="APPIFY Logo Background"
-            width={1000}
-            height={300}
-            //className="w-auto h-96"
-          />
+          <span
+            className="text-gray-300"
+            style={{
+              fontFamily: "Nasalization, sans-serif",
+              fontSize: "15rem",
+            }}
+          >
+            APPIFY
+          </span>
         </div>
         <div className="flex-1 flex items-center justify-center relative z-10">
           <div className="container mx-auto px-4 max-w-6xl">
@@ -36,14 +37,17 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-slate-700/50 to-transparent"></div>
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-slate-700/50 to-transparent "></div>
       </div>
 
       {/* Services Section */}
       <section id="services" className="min-h-screen flex flex-col">
         <div className="flex-1 flex items-center justify-center">
           <div className="container mx-auto px-4 max-w-6xl">
-            <h2 className="text-2xl font-medium text-gray-200 text-center mb-12">
+            <h2
+              className="text-2xl font-medium text-gray-200 text-center mb-12"
+              style={{ fontFamily: "Nasalization, sans-serif" }}
+            >
               Our Services
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
@@ -88,7 +92,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-slate-700/50 to-transparent"></div>
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-slate-700/50 to-transparent "></div>
       </section>
 
       {/* About Section */}
@@ -97,8 +101,11 @@ const Page = () => {
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="p-10">
               <div className="text-center mb-8">
-                <h2 className="text-2xl font-medium text-gray-200 mb-6">
-                  About Appify
+                <h2
+                  className="text-2xl font-medium text-gray-200 mb-6"
+                  style={{ fontFamily: "Nasalization, sans-serif" }}
+                >
+                  About APPIFY
                 </h2>
                 <p className="text-gray-400 max-w-3xl mx-auto leading-relaxed">
                   We are a software company specializing in creating unique,
@@ -111,7 +118,10 @@ const Page = () => {
 
               <div className="grid md:grid-cols-2 gap-10">
                 <div>
-                  <h3 className="text-lg font-medium text-gray-300 mb-4">
+                  <h3
+                    className="text-lg font-medium text-gray-300 mb-4"
+                    style={{ fontFamily: "Nasalization, sans-serif" }}
+                  >
                     Our Approach
                   </h3>
                   <p className="text-gray-400 text-sm leading-relaxed mb-4">
@@ -124,7 +134,10 @@ const Page = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-medium text-gray-300 mb-4">
+                  <h3
+                    className="text-lg font-medium text-gray-300 mb-4"
+                    style={{ fontFamily: "Nasalization, sans-serif" }}
+                  >
                     Our Expertise
                   </h3>
                   <p className="text-gray-400 text-sm leading-relaxed mb-4">
