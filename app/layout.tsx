@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
+import { FooterDropdown } from "./FooterDropdown.client";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -83,7 +84,7 @@ export default function RootLayout({
             <p className="text-gray-400 text-sm mb-4">
               Enterprise Software Solutions
             </p>
-            <div className="flex justify-center space-x-6 mb-4">
+            <div className="flex justify-center items-center space-x-6 mb-4">
               <Link
                 prefetch={true}
                 href="https://app-ify.com/apps/getaways-management/privacy-policy"
@@ -99,6 +100,8 @@ export default function RootLayout({
               >
                 Terms of Service
               </Link>
+
+              <FooterDropdown />
             </div>
             <p className="text-gray-500 text-sm">
               © 2025 APPIFY. All rights reserved.
