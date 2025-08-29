@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.31.6",
     "next": "15.3.3",
     "next-sitemap": "^4.2.3",
     "react": "^19.0.0",
