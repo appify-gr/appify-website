@@ -1,6 +1,16 @@
 import { DownloadsClient } from "./Downloads.client";
-
-const Page = () => {
+import {
+  ClerkProvider,
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+  SignIn,
+  SignOutButton,
+} from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
+const Page = async () => {
   return (
     <div className="min-h-screen bg-gray-900">
       <div className="container mx-auto px-6 py-12 max-w-4xl">
@@ -11,12 +21,23 @@ const Page = () => {
             Download files, documents, and resources
           </p>
         </div>
-
-        {/* Client Component */}
-        <DownloadsClient />
+        <SignedOut>
+          <SignIn
+            routing="hash"
+            fallbackRedirectUrl="/downloads"
+            appearance={{
+              baseTheme: dark,
+              variables: {
+                colorBackground: "#101727",
+              },
+            }}
+          />
+        </SignedOut>
+        <SignedIn>
+          <DownloadsClient />
+        </SignedIn>
       </div>
     </div>
   );
 };
-
 export default Page;

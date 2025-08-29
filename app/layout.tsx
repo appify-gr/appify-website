@@ -2,15 +2,9 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
+import { dark } from "@clerk/themes";
 import { FooterDropdown } from "./FooterDropdown.client";
-import {
-  ClerkProvider,
-  SignInButton,
-  SignUpButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from "@clerk/nextjs";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -31,7 +25,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+    // appearance={{
+    //   baseTheme: dark,
+    //   variables: { colorBackground: "#101727" },
+    //   elements: {
+    //     input: "text-black text-sm",
+    //   },
+    // }}
+    >
       <html lang="en">
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <body className={roboto.className}>

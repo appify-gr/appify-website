@@ -10,6 +10,9 @@ import {
   FaFileExcel,
   FaFileAlt,
 } from "react-icons/fa";
+import { SignOutButton } from "@clerk/nextjs";
+
+//-------------------------------------------------------
 
 interface DownloadFile {
   name: string;
@@ -113,13 +116,20 @@ export const DownloadsClient = () => {
         </div>
       ) : (
         <>
-          <div className="mb-4">
-            <h2 className="text-lg font-medium text-white mb-1">
-              Available Downloads
-            </h2>
-            <p className="text-gray-400 text-sm">
-              Click on any file to download it to your device.
-            </p>
+          <div className="mb-4 flex items-center justify-between">
+            <div>
+              <h2 className="text-lg font-medium text-white mb-1">
+                Available Downloads
+              </h2>
+              <p className="text-gray-400 text-sm">
+                Click on any file to download it to your device.
+              </p>
+            </div>
+            <SignOutButton redirectUrl="/downloads">
+              <button className="cursor-pointer text-xs text-gray-500 hover:text-gray-400 transition-colors px-2 py-1 rounded hover:bg-gray-800/50">
+                Sign Out
+              </button>
+            </SignOutButton>
           </div>
 
           <div className="space-y-0">
