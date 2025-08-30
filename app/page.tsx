@@ -1,5 +1,6 @@
 import { FaCode, FaCog, FaUsers } from "react-icons/fa";
 import Link from "next/link";
+import { ProjectsSwiper } from "./ProjectSwiper.client";
 
 //------------------------------------------------------------------------
 
@@ -90,6 +91,22 @@ const Page = () => {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-slate-700/50 to-transparent "></div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="min-h-screen flex flex-col">
+        <div className="flex-1 flex items-center justify-center">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <h2
+              className="text-2xl font-medium text-gray-200 text-center mb-12"
+              style={{ fontFamily: "Nasalization, sans-serif" }}
+            >
+              Our Projects
+            </h2>
+            <ProjectsSwiper />
           </div>
         </div>
         <div className="w-full h-px bg-gradient-to-r from-transparent via-slate-700/50 to-transparent "></div>

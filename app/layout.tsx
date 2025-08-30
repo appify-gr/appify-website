@@ -51,13 +51,20 @@ export default function RootLayout({
                     className="h-10 w-auto"
                   />
                 </Link>
-                <div className="flex space-x-6">
+                <div className="flex space-x-6 text-sm">
                   <Link
                     prefetch={true}
                     href="/#services"
                     className="text-gray-300 hover:text-white"
                   >
                     Services
+                  </Link>
+                  <Link
+                    prefetch={true}
+                    href="/#projects"
+                    className="text-gray-300 hover:text-white"
+                  >
+                    Projects
                   </Link>
                   <Link
                     prefetch={true}
